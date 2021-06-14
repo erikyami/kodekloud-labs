@@ -5,6 +5,7 @@ During the daily standup, it was pointed out that the timezone across Nautilus A
 Correct the mismatch.
 
 ## Solution
+```
 [root@stapp02 steve]# timedatectl set-timezone America/Argentina/Mendoza
 [root@stapp02 steve]# timedatectl
       Local time: Mon 2021-06-14 18:11:33 -03
@@ -15,3 +16,4 @@ Correct the mismatch.
 NTP synchronized: yes
  RTC in local TZ: no
       DST active: n/a
+```
