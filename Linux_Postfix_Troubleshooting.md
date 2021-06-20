@@ -5,16 +5,23 @@ Some users of the monitoring app have reported issues with xFusionCorp Industrie
 
 ## Solution
 
+```
 ssh groot@stmail01
+```
 
+```
 postfix check
 postfix: fatal: parameter inet_interfaces: no local interface found for ::1
+```
 
+```
 vi /etc/postfix/main.cf
 
 # Enable IPv4, and IPv6 if supported
 inet_protocols = ipv4
+```
 
-
+```
 systemctl start postfix
 systemctl status postfix
+```

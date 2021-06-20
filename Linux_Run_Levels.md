@@ -6,6 +6,8 @@ On all App servers in Stratos Datacenter change the default runlevel so that the
 
 ## Solution
 
+```
 [root@stapp01 tony]# systemctl set-default graphical.target
 Removed symlink /etc/systemd/system/default.target.
 Created symlink from /etc/systemd/system/default.target to /usr/lib/systemd/system/graphical.target.
+```
