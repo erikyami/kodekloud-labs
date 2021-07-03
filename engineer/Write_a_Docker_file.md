@@ -10,6 +10,11 @@ b. Install apache2 and configure it to work on 3003 port. (do not update any oth
 
 ## Solution
 
+```
+vi /opt/docker/Dockerfile
+```
+
+```
 FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -17,3 +22,4 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update && apt install -y apache2 && sed -i 's/80/3003/g' /etc/apache2/ports.conf
 
 CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
+```
