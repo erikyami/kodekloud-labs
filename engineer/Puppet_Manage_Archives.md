@@ -15,6 +15,8 @@ Note: Please perform this task using blog.pp only, do not create any separate in
 vi blog.pp
 ```
 
+
+```
 node "stapp01.stratos.xfusioncorp.com","stapp02.stratos.xfusioncorp.com","stapp03.stratos.xfusioncorp.com"
 {
 
