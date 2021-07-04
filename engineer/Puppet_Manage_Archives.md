@@ -35,3 +35,7 @@ node default {
 }
 
 ```
+
+```
+puppet apply blog.pp
+```
